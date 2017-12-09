@@ -75,9 +75,10 @@ ul{
 
 .contacts__shed{
 	color: #c02169;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 14px;
 	display: block;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .background{
@@ -150,4 +151,79 @@ nav.menu{
 .main-title{
 	font-size: 49px;
 	font-weight: bold;
+	display: block;
+	line-height: 38px;
+	margin-bottom: 60px;
 }
+
+.features__item{
+	width: 250px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.features__item:before{
+	content: "";
+	display: block;
+	margin: 0 auto;
+}
+
+.features__item--unique:before{
+	background: url(../img/icons/unique.png);
+	width: 68px;
+	height: 68px;
+}
+
+.features__item--premium:before{
+	background: url(../img/icons/premium.png);
+	width: 72px;
+	height: 72px;
+}
+
+.features__item--luxury:before{
+	background: url(../img/icons/luxury.png);
+	width: 66px;
+	height: 66px;
+}
+
+.features__title{
+	display: block;
+	text-align: center;
+	margin-top: 35px;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.features__descr{
+	font-size: 18px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+
+.features__list{
+	font-size: 18px;
+}
+
+.features__point{
+	margin-bottom: 25px;
+}
+
+.features__point:before{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: #ec1e79;
+	margin-right: 30px;
+}
+
+
+
+
+
+
+
