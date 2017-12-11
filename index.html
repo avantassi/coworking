@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
@@ -17,24 +17,27 @@
 				</a>
 				<div class="contacts">
 					<a href="tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
-					<a href="#" class="contacts__shed">График работы</a>
+					<button class="contacts__shed">График работы</button>
 				</div>
 			</div>
 		</header>
 
 		<div class="background"></div>
 
+		<div class="container">
+			<aside class="menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#" class="menu__link menu__link--main menu__link--active">Главная</a></li>
+					<li class="menu__item"><a href="#" class="menu__link menu__link--feed">Отзывы</a></li>
+					<li class="menu__item"><a href="#" class="menu__link menu__link--wallet">Тарифы</a></li>
+				</ul>
+			</aside>
+		</div>
+
 		<main class="main">
 			<div class="container clearfix">
-				<nav class="menu">
-					<ul class="menu__list">
-						<li class="menu__item"><a href="#" class="menu__link menu__link--main menu__link--active">Главная</a></li>
-						<li class="menu__item"><a href="#" class="menu__link menu__link--feed">Отзывы</a></li>
-						<li class="menu__item"><a href="#" class="menu__link menu__link--wallet">Тарифы</a></li>
-					</ul>
-				</nav>
 				<div class="features">
-					<hi class="main-title">Особенности</hi>
+					<h1 class="main-title">Особенности</h1>
 					<div class="features__item features__item--unique">
 						<span class="features__title">Уникальность</span>
 						<p class="features__descr">Создан для вашего комфортного отдыха</p>
@@ -64,7 +67,7 @@
 					</div>
 				</div>
 				<div class="news">
-					<hi class="main-title">Последние новости</hi>
+					<h1 class="main-title">Последние новости</h1>
 					<ul class="news__list">
 						<li class="news__item">
 							<img src="img/content/news-1.jpg" alt="" class="news__img">
@@ -95,7 +98,17 @@
 				</div>
 				<div class="pag">
 					<p class="pag__descr">Страница 1 из 7</p>
-					<div class="pag__numbers"></div>
+					<nav class="pag__numbers">
+						<ul class="pag__list">
+							<li class="pag__item"><a href="#" class="pag__link">1</a></li>
+							<li class="pag__item"><a href="#" class="pag__link">2</a></li>
+							<li class="pag__item"><a href="#" class="pag__link">3</a></li>
+							<li class="pag__item"><a href="#" class="pag__link">4</a></li>
+							<li class="pag__item"><a href="#" class="pag__link">5</a></li>
+							<li class="pag__item"><a href="#" class="pag__link">6</a></li>
+							<li class="pag__item"><a href="#" class="pag__link">7</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</main>

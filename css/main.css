@@ -50,7 +50,7 @@ ul{
 	padding: 0;
 }
 
-p{
+p, h1{
 	padding: 0;
 	margin: 0;
 }
@@ -84,8 +84,12 @@ p{
 	color: #c02169;
 	font-weight: 700;
 	font-size: 14px;
-	display: block;
 	font-family: 'Open Sans', sans-serif;
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	border-bottom: 1px solid;
+	outline: none;
 }
 
 .background{
@@ -94,13 +98,10 @@ p{
 	height: 350px;
 }
 
-main.main{
-	padding-top: 65px;
-}
-
-nav.menu{
+.menu{
 	width: 160px;
 	float: left;
+	padding-top: 65px;
 }
 
 .menu__list{
@@ -148,6 +149,10 @@ nav.menu{
 	background: url(../img/icons/wallet.png);
 	width: 19px;
 	height: 16px;
+}
+
+.main{
+	padding-top: 65px;
 }
 
 .features, .news, .pages{
@@ -281,7 +286,7 @@ nav.menu{
 }
 
 .pag{
-	width: 340px;
+	width: 350px;
 	margin: 0 auto;
 	font-family: 'Roboto', sans-serif;
 	margin-bottom: 60px;
@@ -292,11 +297,51 @@ nav.menu{
 	font-size: 14px;
 	font-weight: 300;
 	margin-bottom: 0;
+	display: inline-block;
 }
 
 .pag__numbers{
 	color: #221f1f;
 	font-weight: 700;
+	float: right;
+}
+
+.pag__item{
+	display: inline-block;
+}
+
+.pag__item:first-child:before{
+	content: "";
+	display: inline-block;
+	background: url(../img/icons/left.png); 
+	width: 6px;
+	height: 10px;
+	margin-right: 10px;
+}
+
+.pag__item:last-child:after{
+	content: "";
+	display: inline-block;
+	background: url(../img/icons/right.png); 
+	width: 6px;
+	height: 10px;
+	margin-left: 10px;
+}
+
+.pag__link{
+	text-decoration: none;
+	color: #221f1f;
+	font-size: 14px;
+	font-weight: 700;
+	background-color: #fff;
+	padding: 7px 8px;
+}
+
+.pag__link:hover{
+	color: #fff;
+	background-color: #221f1f;
+	padding: 7px 8px;
+	border-radius: 5px;
 }
 
 .footer{
