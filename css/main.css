@@ -31,12 +31,21 @@
   clear: both;
 }
 
+*{
+	box-sizing: border-box;
+}
+
 body{
   font-family: 'GothamPro', Arial, sans-serif;
   font-size: 14px;
   -webkit-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0; /* убрать, когда подключим reset.css */
+}
+
+.wrapper{
+	overflow: hidden;
+	min-width: 1100px;
 }
 
 .container{
@@ -57,8 +66,12 @@ p, h1{
 
 .header, .footer{
 	background: #27273e;
-	height: 75px;
+	min-height: 75px;
 	padding-top: 15px;
+}
+
+.header{
+	padding-bottom: 20px;
 }
 
 .logo{
@@ -95,7 +108,7 @@ p, h1{
 .background{
 	background: url(../img/decor/background.jpg) center center no-repeat; 
 	background-size: cover;
-	height: 350px;
+	min-height: 350px;
 }
 
 .menu{
@@ -166,6 +179,10 @@ p, h1{
 	display: block;
 	line-height: 38px;
 	margin-bottom: 60px;
+}
+
+.main-title--form{
+	margin-bottom: 30px;
 }
 
 .features__item{
@@ -431,7 +448,96 @@ p, h1{
 	margin-right: 10px;
 }
 
+.backgr-feed{
+	background: url(../img/decor/backgr-feed.jpg) center center no-repeat; 
+	background-size: cover;
+	min-height: 174px;
+	padding-top: 45px;
+}
 
+.action{
+	display: block;
+	width: 620px;
+	margin: 0 auto;
+	font-size: 18px;
+	color: #fff;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+.action--pink{
+	color: #ec1e79;
+}
+
+.form-feed{
+	width: 700px;
+	margin: 0 auto;
+	background-color: #f5f5f5;
+	margin-top: 55px;
+	padding-top: 50px;
+	padding-left: 70px;
+	margin-bottom: 50px;
+	padding-bottom: 40px;
+}
+
+.form__element{
+	width: 270px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.form__element:last-child{
+	margin-right: 0;
+}
+
+.form__element--right{
+	text-align: right;
+}
+
+.form__title, .form__input{
+	display: block;
+}
+
+.form__title{
+	font-size: 14px;
+	color: #221f1f;
+	padding-bottom: 10px;
+}
+
+.form__input{
+	width: 270px;
+	height: 50px;
+	border: none;
+	outline-color: #ec1e79;
+}
+
+.form__element--text{
+	width: 560px;
+}
+
+.form__input--text{
+	width: 560px;
+	min-height: 90px;
+}
+
+.form__radio{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.form__radio-text{
+	margin-right: 5px;
+}
+
+.form__submit{
+	background-color: #27273e;
+	padding: 17px 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+}
 
 
 
