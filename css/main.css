@@ -361,6 +361,8 @@ p, h1{
 
 .author--border{
 	border-bottom: 1px #74747f solid;
+	color: #fff;
+	text-decoration: none;
 }
 
 .social{
@@ -398,12 +400,20 @@ p, h1{
 	margin-right: 10px;
 }
 
+.social__item--vk:hover{
+	background: url(../img/icons/vk-hover.png);
+}
+
 .social__item--fb{
 	background: url(../img/icons/fb.png);
 	width: 20px;
 	height: 20px;
 	margin-top: 10px;
 	margin-right: 10px;
+}
+
+.social__item--fb:hover{
+	background: url(../img/icons/fb-hover.png);
 }
 
 .social__item--gg {
@@ -414,6 +424,10 @@ p, h1{
 	margin-right: 10px;
 }
 
+.social__item--gg:hover{
+	background: url(../img/icons/g+-hover.png);
+}
+
 .social__item--tw{
 	background: url(../img/icons/tw.png);
 	width: 20px;
@@ -422,12 +436,20 @@ p, h1{
 	margin-right: 10px;
 }
 
+.social__item--tw:hover{
+	background: url(../img/icons/tw-hover.png);
+}
+
 .social__item--mail{
 	background: url(../img/icons/mail.png);
 	width: 20px;
 	height: 20px;
 	margin-top: 10px;
 	margin-right: 10px;
+}
+
+.social__item--mail:hover{
+	background: url(../img/icons/mail-hover.png);
 }
 
 .backgr-feed{
