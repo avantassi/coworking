@@ -87,8 +87,8 @@
 				<div class="pag">
 					<p class="pag__descr">Страница 1 из 7</p>
 					<nav class="pag__numbers">
+						<a href="#" class="pag__left"></a>
 						<ul class="pag__list">
-							<a href="#" class="pag__link-no-hover"><img src="img/icons/left.png" height="10" width="6" alt="" class="pag__left"></a>
 							<li class="pag__item"><a href="#" class="pag__link">1</a></li>
 							<li class="pag__item"><a href="#" class="pag__link">2</a></li>
 							<li class="pag__item"><a href="#" class="pag__link">3</a></li>
@@ -96,8 +96,8 @@
 							<li class="pag__item"><a href="#" class="pag__link">5</a></li>
 							<li class="pag__item"><a href="#" class="pag__link">6</a></li>
 							<li class="pag__item"><a href="#" class="pag__link">7</a></li>
-							<a href="#" class="pag__link-no-hover"><img src="img/icons/right.png" alt="" class="pag__right"></a>
 						</ul>
+						<a href="#" class="pag__right"></a>
 					</nav>
 				</div>
 			</div>
@@ -107,7 +107,7 @@
 
 		<div class="backgr-feed">
 			<div class="container">
-				<p class="action">Для наших новых клиентов мы предлагаем <span class="action--pink">скидку 50%</span> на первый день! Приходите, чтобы лично оценить преимущества коворкинга «Воркадиум»!</p>
+				<p class="action">Для наших новых клиентов мы предлагаем <span class="action action--pink">скидку 50%</span> на первый день! Приходите, чтобы лично оценить преимущества коворкинга «Воркадиум»!</p>
 			</div>
 		</div>
 
@@ -117,24 +117,26 @@
 			<div class="form-feed clearfix">
 				<h1 class="main-title main-title--form">Оставить отзыв</h1>
 				<div class="form__element">
-					<label for="" class="form__title">Ваше имя</label>
-					<input type="text" class="form__input">
+					<label for="name" class="form__title">Ваше имя</label>
+					<input type="text" class="form__input" id="name">
 				</div>
 				<div class="form__element">
-					<label for="" class="form__title">Ссылка на профиль VK</label>
-					<input type="text" class="form__input">
+					<label for="profile" class="form__title">Ссылка на профиль VK</label>
+					<input type="text" class="form__input" id="profile">
 				</div>
 				<div class="form__element form__element--text">
-					<label for="" class="form__title">Текст отзыва</label>
-					<textarea class="form__input form__input--text"></textarea>
+					<label for="feed" class="form__title">Текст отзыва</label>
+					<textarea class="form__input form__input--text" id="feed"></textarea>
 				</div>
 				<div class="form__element">
 					<div class="form__title">Отображать фото в отзыве?</div>
 					<div class="form__radio">
-						<input type="radio" class="form__radio-text" id="yes"><label for="yes">Да</label>
+						<input type="radio" class="form__radio-text" id="yes">
+						<label for="yes">Да</label>
 					</div>
 					<div class="form__radio">
-						<input type="radio" class="form__radio-text" id="no"><label for="no">Нет</label>
+						<input type="radio" class="form__radio-text" id="no">
+						<label for="no">Нет</label>
 					</div>
 				</div>
 				<div class="form__element form__element--right">
@@ -148,8 +150,8 @@
 		<footer class="footer">
 			<div class="container clearfix">
 				<div class="footer__text">
-					<p class="author">Сделано с любовью и старанием на курсе "HTML + CSS" в <a href="https://loftschool.com" class="author--bold author--border" target="blank">Loftschool.</a></p> 
-					<p class="author">Автор работы: <span class="author--bold">Савина Екатерина</span></p>
+					<p class="author">Сделано с любовью и старанием на курсе "HTML + CSS" в <a href="https://loftschool.com" class="author author--bold author--border" target="blank">Loftschool.</a></p> 
+					<p class="author">Автор работы: <span class="author author--bold">Савина Екатерина</span></p>
 				</div>
 				<a href="#" class="logo logo--footer">
 					<img src="img/logo/logo.png" height="51" width="99" alt="logo" class="logo__img logo__img--footer">

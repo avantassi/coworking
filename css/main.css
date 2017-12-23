@@ -323,11 +323,31 @@ p, h1{
 	float: right;
 }
 
+.pag__left{
+	display: inline-block;
+	background: url(../img/icons/left.png);
+	width: 6px;
+	height: 10px;
+	margin-right: 10px;
+}
+
+.pag__right{
+	display: inline-block;
+	background: url(../img/icons/right.png);
+	width: 6px;
+	height: 10px;
+	margin-left: 10px;
+}
+
+.pag__list{
+	display: inline-block;
+}
+
 .pag__item{
 	display: inline-block;
 }
 
-.pag__link, .pag__link-no-hover{
+.pag__link{
 	text-decoration: none;
 	color: #221f1f;
 	font-size: 14px;
@@ -471,6 +491,7 @@ p, h1{
 
 .action--pink{
 	color: #ec1e79;
+	display: inline;
 }
 
 .form-feed{
