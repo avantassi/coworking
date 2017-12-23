@@ -327,25 +327,7 @@ p, h1{
 	display: inline-block;
 }
 
-.pag__item:first-child:before{
-	content: "";
-	display: inline-block;
-	background: url(../img/icons/left.png); 
-	width: 6px;
-	height: 10px;
-	margin-right: 10px;
-}
-
-.pag__item:last-child:after{
-	content: "";
-	display: inline-block;
-	background: url(../img/icons/right.png); 
-	width: 6px;
-	height: 10px;
-	margin-left: 10px;
-}
-
-.pag__link{
+.pag__link, .pag__link-no-hover{
 	text-decoration: none;
 	color: #221f1f;
 	font-size: 14px;
@@ -510,6 +492,7 @@ p, h1{
 	height: 50px;
 	border: none;
 	outline-color: #ec1e79;
+	padding-left: 10px;
 }
 
 .form__element--text{
@@ -519,6 +502,7 @@ p, h1{
 .form__input--text{
 	width: 560px;
 	min-height: 90px;
+	padding-top: 10px;
 }
 
 .form__radio{

@@ -25,11 +25,13 @@
 
 		<div class="container">
 			<aside class="menu">
-				<ul class="menu__list">
-					<li class="menu__item"><a href="index.html" class="menu__link menu__link--main menu__link--active">Главная</a></li>
-					<li class="menu__item"><a href="feed.html" class="menu__link menu__link--feed">Отзывы</a></li>
-					<li class="menu__item"><a href="#" class="menu__link menu__link--wallet">Тарифы</a></li>
-				</ul>
+				<nav class="menu__nav">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="index.html" class="menu__link menu__link--main menu__link--active">Главная</a></li>
+						<li class="menu__item"><a href="feed.html" class="menu__link menu__link--feed">Отзывы</a></li>
+						<li class="menu__item"><a href="#" class="menu__link menu__link--wallet">Тарифы</a></li>
+					</ul>
+				</nav>
 			</aside>
 		</div>
 
@@ -76,6 +78,7 @@
 					<p class="pag__descr">Страница 1 из 7</p>
 					<nav class="pag__numbers">
 						<ul class="pag__list">
+							<a href="#" class="pag__link-no-hover"><img src="img/icons/left.png" height="10" width="6" alt="" class="pag__left"></a>
 							<li class="pag__item"><a href="#" class="pag__link">1</a></li>
 							<li class="pag__item"><a href="#" class="pag__link">2</a></li>
 							<li class="pag__item"><a href="#" class="pag__link">3</a></li>
@@ -83,6 +86,7 @@
 							<li class="pag__item"><a href="#" class="pag__link">5</a></li>
 							<li class="pag__item"><a href="#" class="pag__link">6</a></li>
 							<li class="pag__item"><a href="#" class="pag__link">7</a></li>
+							<a href="#" class="pag__link-no-hover"><img src="img/icons/right.png" alt="" class="pag__right"></a>
 						</ul>
 					</nav>
 				</div>
@@ -113,10 +117,10 @@
 				<div class="form__element">
 					<div class="form__title">Отображать фото в отзыве?</div>
 					<div class="form__radio">
-						<input type="radio" class="form__radio-text">Да
+						<input type="radio" class="form__radio-text" id="yes"><label for="yes">Да</label>
 					</div>
 					<div class="form__radio">
-						<input type="radio" class="form__radio-text">Нет
+						<input type="radio" class="form__radio-text" id="no"><label for="no">Нет</label>
 					</div>
 				</div>
 				<div class="form__element form__element--right">
