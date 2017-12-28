@@ -1,25 +1,25 @@
 @font-face {
-  font-family: 'GothamPro-Bold';
+  font-family: 'GothamPro';
   src: url('GothamPro-Bold.eot?#iefix') format('embedded-opentype'),  url('GothamPro-Bold.otf')  format('opentype'),
-	     url('GothamPro-Bold.woff') format('woff'), url('GothamPro-Bold.ttf')  format('truetype'), url('GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+	     url('../fonts/GothamPro-Bold.woff') format('woff'), url('GothamPro-Bold.ttf')  format('truetype'), url('GothamPro-Bold.svg#GothamPro-Bold') format('svg');
   font-weight: bold;
   font-style: normal;
   font-display: optional;
 }
 
 @font-face {
-  font-family: 'GothamPro-Light';
+  font-family: 'GothamPro';
   src: url('GothamPro-Light.eot?#iefix') format('embedded-opentype'),  url('GothamPro-Light.otf')  format('opentype'),
-	     url('GothamPro-Light.woff') format('woff'), url('GothamPro-Light.ttf')  format('truetype'), url('GothamPro-Light.svg#GothamPro-Light') format('svg');
+	     url('../fonts/GothamPro-Light.woff') format('woff'), url('GothamPro-Light.ttf')  format('truetype'), url('GothamPro-Light.svg#GothamPro-Light') format('svg');
   font-weight: 300;
   font-style: normal;
   font-display: optional;
 }
 
 @font-face {
-  font-family: 'GothamPro-LightItalic';
+  font-family: 'GothamPro';
   src: url('GothamPro-LightItalic.eot?#iefix') format('embedded-opentype'),  url('GothamPro-LightItalic.otf')  format('opentype'),
-	     url('GothamPro-LightItalic.woff') format('woff'), url('GothamPro-LightItalic.ttf')  format('truetype'), url('GothamPro-LightItalic.svg#GothamPro-LightItalic') format('svg');
+	     url('../fonts/GothamPro-LightItalic.woff') format('woff'), url('GothamPro-LightItalic.ttf')  format('truetype'), url('GothamPro-LightItalic.svg#GothamPro-LightItalic') format('svg');
   font-weight: 300;
   font-style: italic;
   font-display: optional;
@@ -41,6 +41,7 @@ html, body{
 
 body{
   font-family: 'GothamPro', Arial, sans-serif;
+  font-weight: 300;
   font-size: 14px;
   -webkit-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -407,6 +408,13 @@ p, h1{
 	border-radius: 5px;
 }
 
+.pag__link--active{
+	color: #fff;
+	background-color: #221f1f;
+	padding: 7px 8px;
+	border-radius: 5px;
+}
+
 .footer{
 	padding-top: 15px;
 }
@@ -644,68 +652,75 @@ p, h1{
 	font-weight: 700;
 }
 
+.prices{
+	margin-bottom: 75px;
+}
+
 .prices__item{
 	width: 250px;
 	float: left;
 	margin-right: 55px;
 	min-height: 370px;
+	text-align: center;
 }
 
 .prices__item:nth-child(4), .prices__item:nth-child(7){
 	margin-right: 0;
 }
 
-/*.prices__img{
-	position: absolute;
-}*/
-
-.prices__img{
-	background: url(../img/content/prices-1.jpg);
-	/*position: absolute;*/
+.prices__img-block{
+	position: relative;
 }
 
-.prices__img:after{
+.prices__img-block:after{
 	content: "";
 	background-color: #27273e;
 	opacity: 0.8;
-	/*z-index: 1;*/
+	z-index: 1;
 	width: 250px;
 	height: 153px;
 	display: block;
-/*	position: relative;
+	position: absolute;
 	top: 0;
-	left: 0;*/
+	left: 0;
 }
 
 .prices__price{
+	line-height: 21px;
 	font-size: 18px;
-	/*position: static;*/
-	/*margin-top: 153px;*/
-	
+	font-weight: 700;
+	margin: 25px 40px;
 }
 
 .prices__descr{
 	font-size: 14px;
+	line-height: 21px;
 }
 
-/*.prices__title{
-	position: relative;
+.prices__title{
+	position: absolute;
 	display: block;
-	top: 0;
-	left: 0;
-}*/
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	z-index: 2;
+}
 
 .second-title{
 	font-size: 24px;
 	color: #5dd1f8;
 	text-transform: uppercase;
 	font-weight: 700;
-	position: relative;
-	display: block;
-	top: 0;
-	left: 0;
-	/*z-index: 2;*/
 	margin: 0;
+}
+
+.second-title--vip{
+	color: #ec1e79;
 }
 
 .partners{
