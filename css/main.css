@@ -131,13 +131,13 @@ p, h1{
 	display: none;
 	right: 0;
 	border-radius: 5px;
+	transition: 0.5s;
 }
 
 .triangle{
 	position: absolute;
 	top: -10px;
 	right: 0;
-	/*transform: translateX(-50%);*/
 	height: 10px;
 	width: 20px;
 }
@@ -446,6 +446,7 @@ p, h1{
 
 .pag__link:hover{
 	color: #ec1e79;
+	transition: 0.5s;
 }
 
 .pag__link--active{
@@ -477,10 +478,6 @@ p, h1{
 	text-decoration: none;
 }
 
-.social{
-	width: 180px;
-}
-
 .logo--footer{
 	width: 610px;
 }
@@ -502,6 +499,10 @@ p, h1{
 
 .social__item{
 	display: inline-block;
+}
+
+.social__item:hover{
+	transition: 0.5s;
 }
 
 .social__item--vk{
@@ -688,6 +689,7 @@ p, h1{
 	font-size: 12px;
 	font-weight: 700;
 	cursor: pointer;
+	transition: 0.5s;
 }
 
 .form__submit:hover{
@@ -786,6 +788,7 @@ p, h1{
 .partners__img:hover{
 	opacity: 1;
 	filter: none;
+	transition: 0.5s;
 }
 
 .promo{
@@ -828,6 +831,8 @@ p, h1{
 .promo__button:hover{
 	background-color: #ec1e79;
 	color: #fff;
+	transition: 0.5s;
+	
 }
 
 .animated {
